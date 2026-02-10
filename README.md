@@ -47,7 +47,7 @@ All transitions are done using Postgres transactions.
 
 ### High-level Flow
 
-![Diagram](digram/d2.png)
+![Diagram](diagram/d2.png)
 
 ## Requirements
 
