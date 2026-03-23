@@ -76,6 +76,17 @@ go run ./cmd/jobqueue
 | GET    | /metrics | Metrics      |
 | GET    | /health  | Health check |
 
+Run with Docker (Recommended)
+# Build and start containers
+docker-compose up --build
+
+# Stop containers
+docker-compose down
+Postgres 18 is used for the database.
+The Go job queue app connects via DATABASE_URL defined in docker-compose.yml.
+Tables (pending_jobs and inflight_jobs) are automatically initialized from schema.sql.
+API endpoints remain the same as the local run.
+
 
 Load Testing
 Basic load test scripts are available in the scripts/ directory; they measure
