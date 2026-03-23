@@ -76,12 +76,17 @@ go run ./cmd/jobqueue
 | GET    | /metrics | Metrics      |
 | GET    | /health  | Health check |
 
+```
 Run with Docker (Recommended)
-# Build and start containers
+## Build and start containers
+```bash
 docker-compose up --build
-
-# Stop containers
+```
+## Stop containers
+```bash
 docker-compose down
+```
+
 Postgres 18 is used for the database.
 The Go job queue app connects via DATABASE_URL defined in docker-compose.yml.
 Tables (pending_jobs and inflight_jobs) are automatically initialized from schema.sql.
