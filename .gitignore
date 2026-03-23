@@ -2,3 +2,17 @@
 .env
 pending.json
 inflight.json
+# Go
+bin/
+*.exe
+*.test
+*.out
+vendor/
+
+# Docker
+*.env
+*.log
+
+# IDEs
+.idea/
+.vscode/
